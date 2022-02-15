@@ -1,0 +1,9 @@
+export enum EErrorCode {
+    NO_ERROR = 0,
+    TASK_MISSING_ID,
+    TASK_MISSING_TITLE,
+    TASK_MISSING_BODY,
+    TASK_NOT_FOUND,
+
+    COMMON_INTERNAL_ERROR = 9999,
+}

@@ -1,0 +1,44 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Simple application to manage my todo list",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/*.spec.ts test/**/*.spec.ts",
+    "lint": "tslint --format verbose -c tslint.json -p tsconfig.json",
+    "build": "tsc",
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brt-han-mai/todo-app.git"
+  },
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "author": "brt-han-mai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brt-han-mai/todo-app/issues"
+  },
+  "homepage": "https://github.com/brt-han-mai/todo-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.41"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^17.0.18",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.5.5"
+  }
+}
