@@ -2,7 +2,7 @@ import { Task } from "../entity/task";
 
 export class TaskService {
     public async getAllTasks(): Promise<Task[]> {
-        return await Task.find({});
+        return Task.find({});
     }
 
     public async createTask(title: string, body: string) {
@@ -10,14 +10,14 @@ export class TaskService {
         task.title = title;
         task.body = body;
         task.isDone = false;
-        return await task.save();
+        return task.save();
     }
 
     public async findTaskById(id: number) {
-        return await Task.findOne({ where: { id } });
+        return Task.findOne({ where: { id } });
     }
 
     public async deleteTask(id: number) {
-        return await Task.delete(id);
+        return Task.delete(id);
     }
 }

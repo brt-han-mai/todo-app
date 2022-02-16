@@ -43,3 +43,5 @@ class Server {
 
 const server = new Server();
 server.start();
+// tslint:disable:no-console
+console.log("SERVER STARTED");

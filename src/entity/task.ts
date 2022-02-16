@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, CreateDateColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
+// javascript-obfuscator:disable
 export class Task extends BaseEntity {
     @PrimaryGeneratedColumn()
     id: number;

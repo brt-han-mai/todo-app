@@ -1,18 +1,13 @@
 { 
     "name":"default",
     "type": "sqlite", 
-    "host": "localhost", 
-    "port": 3306, 
-    "username": "root", 
-    "password": "root", 
     "database": "todoapp.db", 
     "synchronize": true, 
     "logging": false, 
     "entities": [
-       "src/entity/**/*.ts",
-       "src/entity/**/*.js"
+       "dist_obfuscated/entity/**/*.js"
     ], 
     "cli": { 
-       "entitiesDir": "src/entity" 
+       "entitiesDir": "dist_obfuscated/src/entity" 
     } 
  }
